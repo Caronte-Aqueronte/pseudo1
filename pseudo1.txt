@@ -1,0 +1,19 @@
+Algoritmo pseudo1
+	Definir num, random, contadorpar, contadorimpar Como Entero
+	Escribir "Ingrese un numero entero"
+	Leer num
+	Para x<-1 Hasta num Con Paso 1 Hacer
+		random = azar(101)
+		//aqui nos aseguramos que el numero este entre 1 y 100
+		Mientras random < 1 Hacer
+			random = azar(101)
+		Fin Mientras
+		Escribir random
+		Si random % 2 == 0 Entonces
+			contadorpar = contadorpar+1
+		SiNo
+			contadorimpar = contadorimpar+1
+		Fin Si
+	Fin Para
+	Escribir  "Hay ",contadorpar," numeros pares y hay ",contadorimpar," numeros impares"
+FinAlgoritmo
